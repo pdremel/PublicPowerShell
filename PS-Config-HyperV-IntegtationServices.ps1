@@ -12,4 +12,4 @@ foreach ($vm in $vms) {
     }
 }
 
-set-vm -Name (get-vm | Where-Object {$_.name -like "*CL1" } ).name -MemoryStartupBytes "8589934592"
+set-vm -Name (get-vm | Where-Object {$_.name -like "*CL1" } ).name -MemoryStartupBytes 4gb
