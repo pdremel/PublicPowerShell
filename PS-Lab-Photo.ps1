@@ -1,0 +1,2 @@
+[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
+Invoke-WebRequest -Uri "https://github.com/pdremel/PublicPowerShell/raw/master/photos.zip" -OutFile "$env:USERPROFILE\Documents\photos.zip"
